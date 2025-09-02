@@ -12,7 +12,7 @@ const razorpayRouter = require('./routers/razorpayRouter')
 const app = express()
 const port = 5000
 app.use(cors({
-  origin: 'http://localhost:3000'
+  origin: process.env.FRONTEND_URL
 }))
 app.use(express.json())
 
